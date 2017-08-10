@@ -9,6 +9,7 @@
 		$password2 = mysqli_real_escape_string($db, $_POST['password2']);
 		$fname = mysqli_real_escape_string($db, $_POST['fname']);
 		$lname = mysqli_real_escape_string($db, $_POST['lname']);
+		//TODO:Insert date of birth and gender.
 		if ($password == $password2) {
 			//create user
 			$password = md5($password); // hash password before storing for security purposes
@@ -27,37 +28,41 @@
 	}
 ?>
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<body>
 			<h2>Signup Form for Match Making</h2>
+			<form method = "post" action = "register.php">
 			<table>
-				<form method = "post" action = "register.php">
-					<label>First Name:</label>
-					<input type="text" name="fname" placeholder="Enter Username" >
-					<br>
-					<lable>Last Name:</lable>
-					<input type="text" placeholder="Enter Email" name="lname">
-					<br>
-					<lable><b>Username</b></lable>
-					<input type="text" placeholder="Enter Username" name="username">
-					<br>
-					<lable><b>Email</b></lable>
-					<input type="text" placeholder="Enter Email" name="email">
-					<br>
-					<lable><b>Password</b></lable>
-					<input type="text" placeholder="Enter Password" name="password">
-					<br>
-					<lable><b>Confirm Password</b></lable>
-					<input type="text" placeholder="Confirm Password" name="password2">
-					<br>
-               			</div>
-       			</div>
-       			<input type ="submit" name ="register_btn" value ="register">
-
-				</form>
+				<tr>
+					<td>First Name: </td>
+					<td><input type="text" name="fname" placeholder ="Please enter your First Name"></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lname" placeholder ="Please enter your Last Name"></td>
+				</tr>
+				<tr>
+					<td>Username: </td>
+					<td><input type="text" name="username" placeholder ="Please enter your Username"></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="email" placeholder="Please enter your E-mail address"></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="text" name="password" placeholder="Please enter your password!"></td>
+				</tr>
+				<tr>
+					<td>Confirm Password: </td>
+					<td><input type="text" name="password2" placeholder="Please confirm your password!"></td>
+				</tr>
 			</table>
+			<input type ="submit" name ="register_btn" value ="register">
+			</form>
 
 		</body>
 	</head>
