@@ -1,33 +1,90 @@
-html{
+html, body{
   width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
 }
-body{
+.intro{
+  height: 100%;
   width: 100%;
+  background:url(img/date.jpg);
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.intro1{
+  height: 35%;
+  width: 100%;
+  display: table;
+}
+.intro2{
+  height: 50%;
+  width: 100%;
+  display: table;
+  background-color:#D4AC0D;
+}
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.intro1 .inner1{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.intro2 .inner2{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.content{
+  max-width:500px;
+  margin: 0 auto;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
 }
-table{
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
+.content1{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
-.submitbtn{
-  background-color: #3498db;
-  color:white;
+.content2{
+  max-width: 100%;
+  margin:0 auto;
+  text-align: center;
+
+}
+.content h1{
+  font-family: 'Raleway', sans-serif;
+  color:#D4AC0D;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 370%;
+}
+.content1 h1{
+  font-family: 'Lobster', cursive;
+  color: #D4AC0D;
+  font-size: 200%;
+}
+.content2 h1{
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 200%;
+}
+.test {
   border-radius: 8px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 16px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration:0.4s;
-  padding: 14px 25px;
-  border: 3px solid white;
+  font-family: 'Raleway', sans-serif;
+  color: #D4AC0D;
+  font-size: 135%;
+  padding:10px 20px;
+  border: 2px solid #D4AC0D;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.submitbtn:hover{
-  background-color:#3498db;
-  color:white;
-  border-radius 8px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 14px 25px;
+.test:hover{
+  background-color:#D4AC0D;
+  color: white;
+  -webkit-transition: 1s;
+  font-weight: bold;
 }

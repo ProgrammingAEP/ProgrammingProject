@@ -15,7 +15,6 @@
 		$location = mysqli_real_escape_string($db, $_POST['location']);
 
 		//TODO:Insert date of birth and gender.
-		//TODO:Insert date of birth and gender.
 		//TODO: Insert password strength bar that indicates how strong or weak the password is
 		//TODO: Insert regex pattern that asks for compulsory password combination of upper, lower case alphabet as well as number and password length of 10+
 		if ($password == $password2) {
@@ -37,26 +36,29 @@
 ?>
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
 		<body>
 			<h1>Register Now!</h1>
 			<form method = "post" action = "register.php">
 			<table>
 				<tr>
-					<td>First Name: </td>
-					<td><input type="text" name="fname"></td>
+					<td>First Name</td>
 				</tr>
 				<tr>
-					<td>Last Name:</td>
-					<td><input type="text" name="lname"></td>
+					<td><input type="text" name="fname" class="inputText" placeholder="First Name"></td>
 				</tr>
 				<tr>
-					<td>Date of Birth</td>
+					<td><input type="text" name="lname" class="inputText" placeholder="Last Name"></td>
+				</tr>
+				<tr>
+						<td>Date of Birth</td>
+				</tr>
+				<tr>
 					<td>
-						<select name="doby">
+						<select name="doby" class ="inputText">
 							<option value="1998">1998</option>
 							<option value="1997">1997</option>
 							<option value="1996">1996</option>
@@ -157,8 +159,7 @@
 							<option value="1901">1901</option>
 							<option value="1900">1900</option>
 						</select>
-						<select name="dobm">
-							<option value="">select</option>
+						<select name="dobm" class ="inputText">
 							<option value="1">Jan</option>
 							<option value="2">Feb</option>
 							<option value="3">Mar</option>
@@ -172,7 +173,7 @@
 							<option value="11">Nov</option>
 							<option value="12">Dec</option>
 						</select>
-						<select name="dobd">
+						<select name="dobd" class ="inputText">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -208,24 +209,34 @@
 				</td>
 				</tr>
 				<tr>
-					<td>Username: </td>
-					<td><input type="text" name="username"></td>
+				<td>Username: </td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username" class ="inputText"></td>
 				</tr>
 				<tr>
 					<td>Email: </td>
-					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" class="inputText"></td>
 				</tr>
 				<tr>
 					<td>Password: </td>
-					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" class="inputText"></td>
 				</tr>
 				<tr>
 					<td>Confirm Password: </td>
-					<td><input type="password" name="password2"></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password2" class="inputText"></td>
 				</tr>
 				<tr>
 					<td>Location</td>
-					<td><input type="text" name ="location"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name ="location" class="inputText"></td>
 				</tr>
 			</table>
 			<br>
