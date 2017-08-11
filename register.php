@@ -15,6 +15,9 @@
 		$location = mysqli_real_escape_string($db, $_POST['location']);
 
 		//TODO:Insert date of birth and gender.
+		//TODO:Insert date of birth and gender.
+		//TODO: Insert password strength bar that indicates how strong or weak the password is
+		//TODO: Insert regex pattern that asks for compulsory password combination of upper, lower case alphabet as well as number and password length of 10+
 		if ($password == $password2) {
 			//create user
 			$password = md5($password); // hash password before storing for security purposes
