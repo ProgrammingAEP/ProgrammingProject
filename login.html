@@ -1,0 +1,38 @@
+<html>
+	<header>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <body>
+            
+        <div class = "buttonopen"><button onclick="document.getElementById('lg1').style.display='block'">Log In</button></div>
+        <div class = "buttonopen"><button><a href="#" style="text-decoration: none; color: white">Sign Up</a></button></div>
+   
+            <div id="lg1" class ="logincontainer">
+
+			<form>
+				<div class="login">
+                    <div class="user"><span><input  type="text" value="" placeholder="Username" id="uname" required/></span></div>
+                    <div class="pws"><span><input  type="password" value="" placeholder="Password" id="pword" required/></span></div>
+                    <div class="logbutton"><span><button>Log In</button></span></div>
+                    <div class= "remember"><input type="checkbox"><a style="font-size: 16px;"> Remember me </a>
+                    <a style="color: white;"href="#" class="forgot">Forgot password?</a></div> 
+                </div>
+            </form>
+            </div>
+            
+            <script>
+            var modal = document.getElementById('lg1');
+
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+</script>     
+		</body>
+	</header>
+	
+</html>
+
+
+
