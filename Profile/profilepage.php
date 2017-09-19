@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php session_start();
+if (isset($_GET['user'])) {
+ $user_id = $_GET['user'];
+}
+$year = date("Y");
+?>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -31,6 +36,23 @@
         text-decoration: none;
         color: white;
     }
+    table{
+      margin-left: 0%;
+      text-align: center;
+      width: 40%;
+    }
+    .aboutme{
+      background-color: pink;
+      width: 80%;
+      margin:auto;
+      padding: 5px 0px 0px 0px;
+    }
+    .middleline{
+      background-color: grey;
+      width: 80%;
+      margin:auto;
+      height: 5px;
+    }
 
     </style>
     <title>
@@ -43,24 +65,57 @@
     <section class = "container1">
       <div align="center" class="middle1">
         <img class ="person" src="../img/human.jpg"><br>
-        <p><?php echo  $_SESSION["fname"]." ".$_SESSION["lname"]."        |        "; ?> <?php echo $_SESSION["doby"]."/".$_SESSION["dobm"]."/".$_SESSION["dobd"]." | "; ?><?php echo $_SESSION["state"]." | ".$_SESSION["city"]; ?></p>
+        <p>
+        <?php
+        $db = mysqli_connect("localhost", "root", "ybk2588098", "accounts");
+        $sql = "SELECT * FROM members WHERE user_id = '$user_id'";
+        $result = $db->query($sql);
+        	if ($result->num_rows > 0) {
+        	    // output data of each row
+        	    while($row = $result->fetch_assoc()) {
+                	$age = $year - $row["doby"];
+                echo $row["fname"]." ".$row["lname"]." || ". $row["gender"]." || ".$age;
+              }
+            }
+         ?></p>
         <br>
       </div>
     </section>
-    <div class="middleempty">
+    <div class="middleline">
     </div>
-    <section class="container2">
-      <div class="middle2">
-        <p><b>GENERAL INFORMATION</b></p>
-       <p><b>Occupation:</b> Student</p>
-       <p><b>Age:</b> 21</p>
-       <p><b>Relationship:</b> Single</p>
-       <p><b>Ethinicity:</b> Asian</p>
-      </div>
-      <div class= "right">
-        <p><b>ABOUT ME</b></p>
-        <p>I rike springroll</p>
-      </div>
-    </section>
+    <div class="aboutme">
+        <?php
+        $db = mysqli_connect("localhost", "root", "ybk2588098", "accounts");
+        $sql = "SELECT * FROM members AS m INNER JOIN information as f ON m.user_id = f.user_id INNER JOIN ideal as i ON m.user_id = i.user_id INNER JOIN favourites as fa ON m.user_id = fa.user_id WHERE m.user_id = '$user_id'";
+        $result = $db->query($sql);
+        echo "<table class>";
+        echo "<tr>";
+        echo "<th>Height</th>";
+        echo "<th>Occupation</th>";
+        echo "<th>Education</th>";
+        echo "<th>Ethnic</th>";
+        echo "</tr>";
+          if ($result->num_rows > 0) {
+              // output data of each row
+              while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>".$row["movgenre"]."</td>";
+                echo "<td>".$row["favmovie"]."</td>";
+                echo "<td>".$row["musgenre"]."</td>";
+                echo "<td>".$row["favsong"]."</td>";
+                echo "</tr>";
+              }
+            }
+        echo "</table>";
+        echo "<table class ='two'>";
+        echo "<tr>";
+        echo "<th>Height</th>";
+        echo "<th>Occupation</th>";
+        echo "<th>Education</th>";
+        echo "<th>Ethnic</th>";
+        echo "</tr>";
+        echo "</table>";
+         ?>
+       </div>
   </body>
 </html>
