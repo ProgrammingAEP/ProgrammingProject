@@ -7,7 +7,7 @@
         <body>
 			<form action = "validation.php" method="POST">
 				<div class="login">
-												<h1>Splendr</h1>
+												<h1 style ="font-family:'Lobster', sans-serif;">Splendr</h1>
 												<?php if (isset($_SESSION["error"])){
 													echo "<p style=color:red;>"."Your username and password is incorrect!"."<p>";
 													session_unset();
