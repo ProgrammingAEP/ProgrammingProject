@@ -24,6 +24,22 @@ if (isset($_POST['pref_btn'])) {
 	$sql = "INSERT INTO hobby(user_id, ptype, personality, hobby1, hobby2, hobby3, hobby4, hobby5, travel, visit) VALUES('$user_id', '$ptype', '$personality', '$hobby1', '$hobby2', '$hobby3', '$hobby4', '$hobby5', '$travel', '$visit')";
 	mysqli_query($db, $sql);
 }
+
+if (isset($_POST['pref_btn2'])) {
+	$idealgender = mysqli_real_escape_string($db, $_POST['idealgender']);
+	$idealage = mysqli_real_escape_string($db, $_POST['idealage']);
+	$idealbtype = mysqli_real_escape_string($db, $_POST['idealbtype']);
+	$idealeducation = mysqli_real_escape_string($db, $_POST['idealeducation']);
+	$idealrace = mysqli_real_escape_string($db, $_POST['idealrace']);
+ 	$idealdrink = mysqli_real_escape_string($db, $_POST['idealdrink']);
+	$idealsmoke = mysqli_real_escape_string($db, $_POST['idealsmoke']);
+	$idealgamble = mysqli_real_escape_string($db, $_POST['idealgamble']);
+	$idealreligion = mysqli_real_escape_string($db, $_POST['idealreligion']);
+
+	$sql = "INSERT INTO ideal(user_id, idealgender, idealage, idealbtype, idealeducation, idealrace, idealdrink, idealsmoke, idealgamble, idealreligion) VALUES('$user_id', '$idealgender', '$idealage', '$idealbtype', '$idealeducation', '$idealrace', '$idealdrink', '$idealsmoke', '$idealgamble', '$idealreligion')";
+	mysqli_query($db, $sql);
+	header('location:preferencefinish.php');
+}
  ?>
 <html>
 	<head>
@@ -43,13 +59,14 @@ if (isset($_POST['pref_btn'])) {
 
         <h1>Preferences</h1>
         <div id="pref" class = "preferences">
-        <form>
+        <form method="POST" action="preference5.php">
             <p>I am looking for a</p>
-            <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="idealgender" value="male"> Male
+						<input type="radio" name="idealgender" value="female"> Female<br>
 
 
             <p>I would like my partner to be in this age range</p>
-                <select name="age">
+                <select name="idealage">
                     <option></option>
                     <option value="early">18-23</option>
                     <option value="late">24-29</option>
@@ -59,8 +76,8 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>My ideal body type is for my partner is</p>
-                <select name="body">
-                    <option></option>
+                <select name="idealbtype">
+                    <option></option>[]
                     <option value="slim">Slim</option>
                     <option value="ath">Athletic</option>
                     <option value="avg">Average</option>
@@ -70,7 +87,7 @@ if (isset($_POST['pref_btn'])) {
 
 
             <p>My ideal education level for my partner is</p>
-                <select name="education">
+                <select name="idealeducation">
                     <option></option>
                     <option value="hsg">High School Graduate</option>
                     <option value="cd">Certificate Diploma</option>
@@ -80,10 +97,10 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>My preferred ethnicity for my partner is</p>
-                <select name="race">
+                <select name="idealrace">
                     <option></option>
-                    <option value="asn">Asian</option>
-                    <option value="blk">Black/African</option>
+                    <option value="asian">Asian</option>
+                    <option value="black">Black/African</option>
                     <option value="white">Caucasian</option>
                     <option value="latino">Hispanic</option>
                     <option value="arab">Middle Eastern</option>
@@ -91,7 +108,7 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>I'd like my partner to drink</p>
-                <select name="drink">
+                <select name="idealdrink">
                     <option></option>
                     <option value="all">All the time</option>
                     <option value="most">Most of the time</option>
@@ -101,7 +118,7 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>I'd like my partner to smoke</p>
-                <select name="smoke">
+                <select name="idealsmoke">
                     <option></option>
                     <option value="all">All the time</option>
                     <option value="most">Most of the time</option>
@@ -111,7 +128,7 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>I'd like my partner to gamble</p>
-                <select name="gamble">
+                <select name="idealgamble">
                     <option></option>
                     <option value="all">All the time</option>
                     <option value="most">Most of the time</option>
@@ -121,7 +138,7 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
             <p>My preferred religion for my partner is</p>
-                <select name="religion">
+                <select name="idealreligion">
                     <option></option>
                     <option value="ath">Atheist</option>
                     <option value="agn">Agnostic</option>
@@ -136,7 +153,7 @@ if (isset($_POST['pref_btn'])) {
                 </select>
 
 
-            <div class="nextbtn"><input href="preference5.html" type ="submit" class ="nextbtn" name ="register_btn" value ="Next"></div>
+            <div class="nextbtn"><input type ="submit" class ="nextbtn" name ="pref_btn2" value ="Next"></div>
 
         </form>
         </div>

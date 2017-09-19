@@ -209,7 +209,6 @@ if (isset($_POST['pref_btn'])) {
                     <option value="islam">Islam</option>
                     <option value="jew">Judaism</option>
                     <option value="othr">Other</option>
-                    <option value="othr">None</option>
                 </select>
 
             <div class="nextbtn"><input type ="submit" href="preference3.html" class ="nextbtn" name ="pref_btn" value ="Next"></div>
