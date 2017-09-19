@@ -6,7 +6,7 @@ html, body{
 h1{
 	font-size: 300%;
 	color:#FF3A44;
-	font-family: 'Quicksand',sans-serif;
+	font-family: 'Lobster',sans-serif;
 	text-align: center;
 }
 
@@ -97,6 +97,18 @@ body{
 }
 .regcontainer h1{
 	font-family: 'Lobster', cursive;
+}
+
+.genderfield{
+    width: 50%;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 20px;
+    outline: none;
 }
 .inputText{
     width: 100%;
