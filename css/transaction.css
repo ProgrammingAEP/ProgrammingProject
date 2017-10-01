@@ -1,0 +1,32 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+  height: 100%;
+  text-align: center;
+}
+body h1{
+  font-size: 300%;
+  font-family: 'Lobster', cursive;
+  color: #FF3A44;
+}
+body table{
+  text-align: center;
+  margin:auto;
+  font-family: 'Roboto', sans-serif;
+}
+body table tr{
+  margin: auto;
+}
+body table td{
+  padding: 5px 0px 5px 0px;
+}
+body input{
+  border: 2px solid #FF3A44;
+  border-radius: 5px;
+}
+.submitbtn{
+  background-color: #FF3A44;
+  color: white;
+}
