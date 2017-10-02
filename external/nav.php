@@ -24,6 +24,7 @@
     <li class="img"><a href="../index/index.php"><img src="../img/Logo.png"></a></li>
     <li><a class ="link"href="../Preference/Match.php">MATCH & CHAT(<?php echo $notification;?>)</a></li>
     <li><a class="link" href="../Transaction/cart.php">TRANSACTIONS</a></li>
+
     <?php
 			if(isset($_SESSION["loggedin"])){
 	      echo"<li><a class='link' href ='../Profile/profilepage.php?user=$myid'>PROFILE</a></li>";
@@ -31,5 +32,7 @@
 	      echo"<li><a class ='link' href ='../Login/login.php'>LOGIN</a></li>";
 	    }
 		?>
+          <li><a class="link" href="../Login/logout.php">LOGOUT</a></li>
+
   </ul>
 </nav>
