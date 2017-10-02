@@ -530,6 +530,8 @@
 
       <input type ="submit" class ="nextbtn" name ="pref_btn" value ="Next">
 	  	</form>
+        <br>
+
 	  </div>
 	</body>
 	<?php include("../external/footer.php");?>

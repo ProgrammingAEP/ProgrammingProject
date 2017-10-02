@@ -107,11 +107,12 @@
 				<br><br>
 
         <p>What is your favourite song?</p>
-          <input  type="text" value="" placeholder="" name ="favsong" id="song" style="width: 70%;"/><br><br>
-				<br><br>
+          <input  type="text" value="" placeholder="" name ="favsong" id="song" style="width: 70%;"/><br>
 
         <input type ="submit" class ="nextbtn" name ="pref_btn" value ="Next">
       </form>
+    <br>    
+
   	</div>
 	</body>
 	<?php include("../external/footer.php");?>
