@@ -25,6 +25,5 @@
     		<div class= "remember"><a href="#" class="forgot">Forgot password?</a></div>
       </div>
     </form>
-		<?php include("../external/footer.php");?>
 	</body>
 </html>
