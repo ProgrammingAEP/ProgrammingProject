@@ -53,7 +53,7 @@
   	$result = $db->query($sql); // joining member, ideal, information, hobby, result to display list of users matched and their informations.
     //THIS IS FOR THE MATCHED USERS
   	echo "<table>
-            <tr>
+            <tr style='background: #FFCFD1;'>
     	 	      <th>GENDER</th>
     		      <th>NAME</th>
     		      <th>AGE</th>
@@ -63,6 +63,7 @@
               <th>ETHNICITY</th>
     		      <th>COMMON INTERESTS</th>
     		      <th>SCORE</th>
+                  <th></th>
   	       </tr>";
   	if ($result -> num_rows > 0) {// if the conditions are all met
   		while ($row = $result->fetch_assoc()) { // print every sin\
