@@ -7,7 +7,9 @@ html, body
   margin:0;
   padding:0;
 }
-
+p2{
+    font-size: 125%;
+}
 .intro
 {
   height: 100%;
@@ -67,7 +69,7 @@ html, body
 .content1
 {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 130px;
   text-align: center;
 }
 
@@ -90,7 +92,7 @@ html, body
 {
   font-family: 'Lobster', cursive;
   color: #FF3A44;
-  font-size: 200%;
+  font-size: 250%;
 }
 
 .content2 h1
