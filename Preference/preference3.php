@@ -67,14 +67,14 @@
             <option></option>
     				<option value="action">Action</option>
     				<option value="adventure">Adventure</option>
-            <option value="comedy">Comedy</option>
-            <option value="crime">Crime</option>
-            <option value="drama">Drama</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="horror">Horror</option>
-            <option value="romance">Romance</option>
-            <option value="satire">Satire</option>
-            <option value="thriller">Thriller</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Romance</option>
+            <option value="Satire">Satire</option>
+            <option value="Thriller">Thriller</option>
           </select>
 				<br><br>
 
@@ -89,19 +89,20 @@
 		    		<option value="blu">Blues</option>
             <option value="class">Classical</option>
             <option value="com">Comedy</option>
-            <option value="country">Country</option>
-            <option value="dance">Dance</option>
-            <option value="elect">Electronic</option>
-            <option value="rap">Hip-Hop/Rap</option>
-            <option value="indie">Indie Pop</option>
-            <option value="jazz">Jazz</option>
-            <option value="kpop">K-Pop</option>
+            <option value="Country">Country</option>
+            <option value="Dance">Dance</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Indie">Indie</option>
+            <option value="Jazz">Jazz</option>
+            <option value="K-Pop">K-Pop</option>
     				<option value="latin">Latin</option>
-            <option value="pop">Pop</option>
-            <option value="regg">Reggae</option>
-            <option value="rock">Rock</option>
-            <option value="track">Soundtrack</option>
-            <option value="world">World</option>
+            <option value="Pop">Pop</option>
+	    <option value="Rap">Rap</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Rock">Rock</option>
+            <option value="Soundtrack">Soundtrack</option>
+            <option value="World">World</option>
         	</select>
 				<br><br>
 
