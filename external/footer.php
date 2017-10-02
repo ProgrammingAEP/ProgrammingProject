@@ -35,7 +35,6 @@
         <h5>Legal</h5>
         <ul>
           <li><a href="../Legal/terms.php">Terms and Condition</a></li>
-          <li><a href="../Legal/site.php">Site Map</a></li>
         </ul>
       </div>
 
