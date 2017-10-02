@@ -48,8 +48,8 @@
 			<div class ="regcontainer">
 				<h1>Splendr</h1>
 				<form class = "regform" method = "post" action = "register.php">
-					<input type="radio" class="genderfield" name="gender" value="Male">Male
-					<input type="radio" class="genderfield" name="gender" value="Female">Female
+					<input type="radio" class="genderfield" name="gender" value="Male" required>Male
+					<input type="radio" class="genderfield" name="gender" value="Female" required>Female
 					<table>
 						<tr>
 							<td><b>First Name</b></td>
