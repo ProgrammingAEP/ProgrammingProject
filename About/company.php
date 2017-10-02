@@ -40,7 +40,7 @@
 			<div class ="inner1">
 				<div class="content1">
 					<h1>Our Mission</h1>
-					Splendr started off as a start-up at RMIT University. With one goal in mind to develop a matching making application. With that objective, our team has developed a simple yet effective match making application. We've made  an application that covers the core values of online dating, and we hope to see you on our site.
+					<p2>Splendr started off as a start-up at RMIT University. With one goal in mind to develop a matching making application. With that objective, our team has developed a simple yet effective match making application. We've made  an application that covers the core values of online dating, and we hope to see you on our site.</p2>
 				</div>
 			</div>
 		</section>
