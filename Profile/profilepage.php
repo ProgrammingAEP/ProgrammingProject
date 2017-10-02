@@ -115,7 +115,7 @@
         $sql = "SELECT * FROM members AS m INNER JOIN information as f ON m.user_id = f.user_id INNER JOIN ideal as i ON m.user_id = i.user_id INNER JOIN favourites as fa ON m.user_id = fa.user_id WHERE m.user_id = '$user_id'";
         $result = $db->query($sql);
         //PRINT ALL OF THEIR INFORMATION FROM THE TABLE ABOVE
-        echo "<table class ="profileTable">";
+        echo "<table class ="table">";
         echo "<tr>";
         echo "<th>Height</th>";
         echo "<th>Body Type</th>";
@@ -151,7 +151,7 @@
           }
         echo "</table>";
 
-        echo "<table class ='profileTable'>";
+        echo "<table class ='table'>";
         echo "<tr>";
         echo "<th>Hobby 1</th>";
         echo "<th>Hobby 2</th>";
