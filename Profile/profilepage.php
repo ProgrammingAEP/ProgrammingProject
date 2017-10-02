@@ -80,7 +80,7 @@
               if ($myid == $user_id) { // if it's the LOGGED IN USER'S PROFILE, allow the user to have the choice to update new pic or not.
                 echo " <form action='../Profile/profilepage.php?user=$user_id' method='post' enctype='multipart/form-data'>
                 <input type='file' name='image' >
-                <input type='submit' name='upload' value='upload'>
+                <input class='button' type='submit' name='upload' value='Upload'>
                 </form>";
               }
             }
