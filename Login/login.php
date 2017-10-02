@@ -26,4 +26,5 @@
       </div>
     </form>
 	</body>
+	<?php include("../external/footer.php");?>
 </html>
