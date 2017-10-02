@@ -43,7 +43,7 @@
         <div class="social-networks">
           <a href="https://twitter.com/" class="twitter"><img src="../img/twitter.png"></a>
           <a href="https://www.facebook.com/" class="facebook"><img src="../img/facebook.png"></a>
-          <a href="https://www.facebook.com/" class="instagram"><img src ="../img/instagram.png"></a>
+          <a href="https://www.instagram.com/" class="instagram"><img src ="../img/instagram.png"></a>
         </div>
       </div>
     </div>
