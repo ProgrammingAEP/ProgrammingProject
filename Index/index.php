@@ -39,7 +39,7 @@
 		<section class="intro1">
 			<div class ="inner1">
 				<div class="content1">
-					<h1>QUOTE OF THE MONTH</h1>
+					<h1>Quote of the Month</h1>
 					<h1>"Love consists of this: two solitudes that meet, protect and greet each other." - Rainer Maria Rilke</h1>
 				</div>
 			</div>
