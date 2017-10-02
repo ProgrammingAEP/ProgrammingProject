@@ -21,8 +21,10 @@ table{
 table th{
   text-align: center;
   color: black;
-  background: #ddd;    
+  background: #ddd;  
+  padding: 5px;    
 }
+
 textarea{
   resize: none;
 }
@@ -75,9 +77,10 @@ textarea{
   color: white;
 }
 
-.profileTable{
-  margin: 0  40px 0;
+.table{
+  margin: 0 0 40px 0;
   width: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   display: table;
+  @media screen and (max-width: 580px);
 }
