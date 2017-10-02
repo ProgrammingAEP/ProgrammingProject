@@ -23,10 +23,34 @@ body table td{
   padding: 5px 0px 5px 0px;
 }
 body input{
-  border: 2px solid #FF3A44;
-  border-radius: 5px;
+    width: 500px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 20px;
+    outline: none;
 }
 .submitbtn{
-  background-color: #FF3A44;
-  color: white;
+    width: 40%;
+    height: 40px;
+    background: #FF656D;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #FF656D;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.submitbtn:hover{
+    background: #FF3A44;
+    border: 1px solid #FF3A44;
 }
