@@ -17,7 +17,6 @@
       <div class="col-sm-2">
         <h5>Get Started</h5>
         <ul>
-          <li><a href="../Index/index.php">Home</a></li>
           <li><a href="../Registration/register.php">Sign Up</a></li>
           <li><a href="../Login/login.php">Log In</a></li>
         </ul>
