@@ -26,16 +26,16 @@
       <div class="col-sm-2">
         <h5>About Us</h5>
         <ul>
-          <li><a href="#">Company Information</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="../About/company.php">Company Information</a></li>
+          <li><a href="../About/contact.php">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="col-sm-2">
         <h5>Legal</h5>
         <ul>
-          <li><a href="#">Terms and Condition</a></li>
-          <li><a href="#">Site Map</a></li>
+          <li><a href="../Legal/terms.php">Terms and Condition</a></li>
+          <li><a href="../Legal/site.php">Site Map</a></li>
         </ul>
       </div>
 
