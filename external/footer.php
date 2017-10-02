@@ -41,9 +41,9 @@
 
       <div class="col-sm-3">
         <div class="social-networks">
-          <a href="#" class="twitter"><img src="../img/twitter.png"></a>
-          <a href="#" class="facebook"><img src="../img/facebook.png"></a>
-          <a href="#" class="instagram"><img src ="../img/instagram.png"></a>
+          <a href="https://twitter.com/" class="twitter"><img src="../img/twitter.png"></a>
+          <a href="https://www.facebook.com/" class="facebook"><img src="../img/facebook.png"></a>
+          <a href="https://www.facebook.com/" class="instagram"><img src ="../img/instagram.png"></a>
         </div>
       </div>
     </div>
