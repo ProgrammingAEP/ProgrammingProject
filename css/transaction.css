@@ -24,16 +24,8 @@ body table td{
   padding: 5px 0px 5px 0px;
 }
 body input{
-    width: 500px;
-    height: 42px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0 0 0 20px;
-    outline: none;
+  border: 2px solid #FF3A44;
+  border-radius: 5px;
 }
 .submitbtn{
     width: 27%;
