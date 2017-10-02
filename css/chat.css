@@ -55,11 +55,21 @@ textarea{
   margin:auto;
   margin-top:1%;
 }
-.testing input{
-  margin: auto;
-  display: block;
-  border-radius: 4px;
-  border: 2px solid #FF3A44;
-  background-color: #FF3A44;
-  color: white;
+input[type=submit]{
+    margin: auto;
+    display: block;
+    width: 35%;
+    height: 40px;
+    background: #FF656D;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #FF656D;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    cursor: pointer;
 }
+
+
