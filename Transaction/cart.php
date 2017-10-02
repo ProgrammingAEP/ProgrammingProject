@@ -44,9 +44,9 @@
     <p>Get Unlimited Messages For Your Profile</p>
     <form method = "post" action = "cartconfirmation.php">
       <h2>Choose Your Message Plan</h2>
-      <input type="radio" name="months" value="15"  onclick="updateTotal()"/> 3 Months<br>
-      <input type="radio" name="months" value="25"  onclick="updateTotal()"/> 6 Months<br>
-      <input type="radio" name="months" value="40"  onclick="updateTotal();"/> 12 Months<br>
+      <input type="radio" name="months" value="15"  onclick="updateTotal()" required/> 3 Months<br>
+      <input type="radio" name="months" value="25"  onclick="updateTotal()" required/> 6 Months<br>
+      <input type="radio" name="months" value="40"  onclick="updateTotal();"required/> 12 Months<br>
       <b>Total:</b> = $<span id="total">0</span>
       <br><br>
       <a href="cart.php"><button class = "submitbtn" name ="AddCart">Add to Cart</button></a>
