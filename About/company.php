@@ -25,7 +25,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel ="stylesheet" type="text/css" href ="../css/index.css">
 		<meta charset="utf-8">
-		<title>Splendr</title>
+		<title>Splendr - About Us </title>
 		<?php include("../external/nav.php");?>
 	</head>
 	<body>
