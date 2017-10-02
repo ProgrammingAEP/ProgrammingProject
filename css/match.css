@@ -1,6 +1,6 @@
 table{
-      font-family: 'Roboto', sans-serif;
-      width: 90%;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
     height: 30%;
     margin: auto;
 }
@@ -12,6 +12,9 @@ table th{
 table td{
   padding: 20px 25px 20px 25px;
 }
+
+tr:nth-child(even){background-color: #ddd}
+
 html{
   text-align: center;
 }
