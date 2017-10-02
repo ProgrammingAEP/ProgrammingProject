@@ -244,4 +244,6 @@
 			</div>
 		</section>
 	</body>
+	<?php include("../external/footer.php");?>
+
 </html>
