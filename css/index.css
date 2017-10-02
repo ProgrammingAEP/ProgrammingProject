@@ -9,6 +9,11 @@ html, body
   text-align: center;
 }
 
+p2{
+    font-size: 125%;
+    font-family: 'Roboto',sans-serif;
+}
+
 .intro
 {
   height: 100%;
