@@ -12,7 +12,7 @@
 	<body>
 		<form action = "validation.php" method="POST">
 			<div class="login">
-				<a href="../index/index.php"><h1>Splendr</h1></a>
+				<h1>Splendr</h1></a>
 					<?php
 						if (isset($_SESSION["error"])){ //  SESSION["error"] is flagged in validation.php file
 							echo "<p style=color:red;>"."Your username and password is incorrect!"."<p>";
