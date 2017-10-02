@@ -55,20 +55,20 @@
 							<td><b>First Name</b></td>
 						</tr>
 						<tr>
-							<td><input type="text" name="fname" class="inputText" placeholder="First Name"></td>
+							<td><input type="text" name="fname" class="inputText" placeholder="First Name" required></td>
 						</tr>
 						<tr>
 							<td><b>Last Name</b></td>
 						</tr>
 						<tr>
-							<td><input type="text" name="lname" class="inputText" placeholder="Last Name"></td>
+							<td><input type="text" name="lname" class="inputText" placeholder="Last Name" required></td>
 						</tr>
 						<tr>
 							<td><b>Date of Birth</b></td>
 						</tr>
 						<tr>
 							<td>
-								<select name="doby" class ="inputTextdob">
+								<select name="doby" class ="inputTextdob" required>
 									<option value="1999">1999</option>
 									<option value="1998">1998</option>
 									<option value="1997">1997</option>
@@ -121,7 +121,7 @@
 									<option value="1950">1950</option>
 								</select>
 
-								<select name="dobm" class ="inputTextdob">
+								<select name="dobm" class ="inputTextdob" required>
 									<option value="1">Jan</option>
 									<option value="2">Feb</option>
 									<option value="3">Mar</option>
@@ -136,7 +136,7 @@
 									<option value="12">Dec</option>
 								</select>
 
-								<select name="dobd" class ="inputTextdob">
+								<select name="dobd" class ="inputTextdob" required>
 									<option value="1">1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -175,25 +175,25 @@
 							<td><b>Username</b> </td>
 						</tr>
 						<tr>
-							<td><input type="text" name="username" class ="inputText" placeholder="Username" id="uname"></td>
+							<td><input type="text" name="username" class ="inputText" placeholder="Username" id="uname" required></td>
 						</tr>
 						<tr>
 							<td><b>Email</b> </td>
 						</tr>
 						<tr>
-							<td><input type="email" name="email" class="inputText" placeholder="Email" id="email"></td>
+							<td><input type="email" name="email" class="inputText" placeholder="Email" id="email" required></td>
 						</tr>
 						<tr>
 							<td><b>Password</b> </td>
 						</tr>
 						<tr>
-							<td><input type="password" name="password" class="inputText" placeholder="Password" id="pword"></td>
+							<td><input type="password" name="password" class="inputText" placeholder="Password" id="pword" required></td>
 						</tr>
 						<tr>
 							<td><b>Confirm Password</b> </td>
 						</tr>
 						<tr>
-							<td><input type="password" name="password2" class="inputText" placeholder="Confirm Password"id="pword"></td>
+							<td><input type="password" name="password2" class="inputText" placeholder="Confirm Password"id="pword" required></td>
 						</tr>
 						<tr>
 							<td><b>State</b></td>
@@ -213,7 +213,7 @@
 									else if(name=='')document.getElementById('city').innerHTML='<select name="" class=""><option value="">Select One</option></select>';
 									}
 								</script>
-								<select name="state" class ="inputText" onchange="showfield(this.options[this.selectedIndex].value)">
+								<select name="state" class ="inputText" onchange="showfield(this.options[this.selectedIndex].value)" required>
 									<option value="">Select One</option>
 									<option value="act">ACT</option>
 									<option value="nsw">NSW</option>
@@ -232,7 +232,7 @@
 						</tr>
 						<tr>
 							<td>
-								<select id ="city" name="city" class="inputText" placeholder="City">
+								<select id ="city" name="city" class="inputText" placeholder="City" required>
 									<option value="">Select One</option>
 								</select>
 							</td>
@@ -244,4 +244,5 @@
 			</div>
 		</section>
 	</body>
+	<?php include("../external/footer.php");?>
 </html>
