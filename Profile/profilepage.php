@@ -79,8 +79,9 @@
             while($row = $result->fetch_assoc()) {
               if ($myid == $user_id) { // if it's the LOGGED IN USER'S PROFILE, allow the user to have the choice to update new pic or not.
                 echo " <form action='../Profile/profilepage.php?user=$user_id' method='post' enctype='multipart/form-data'>
-                <input type='file' name='image' >
-                <input class='button' type='submit' name='upload' value='Upload'>
+                <input class='inputButton'type='file' name='image' >";
+                echo "<br>";
+                echo "<input class='button' type='submit' name='upload' value='Upload'>
                 </form>";
               }
             }
@@ -103,7 +104,8 @@
             while($row = $result->fetch_assoc()) {
               if ($row["aboutme"] == NULL && $myid == $user_id) { // if the aboutme section hasnt been written, allow the user to write the section
                 echo "<form method ='POST' action='../Profile/profilepage.php?user=$user_id'>";
-                echo "<textarea name='aboutmeupdate' rows='8' cols='80' placeholder='Please write a brief introduction about yourself!'></textarea>";
+                echo "<textarea name='aboutmeupdate' rows='5' cols='78' placeholder='Please write a brief introduction about yourself!'></textarea>";
+                echo '<br>';
                 echo "<input type='submit' name='updateaboutme'>";
                 echo "</form>";
               }else{ // or if it has been written by the user, display what the user wrote,
@@ -115,6 +117,7 @@
         $sql = "SELECT * FROM members AS m INNER JOIN information as f ON m.user_id = f.user_id INNER JOIN ideal as i ON m.user_id = i.user_id INNER JOIN favourites as fa ON m.user_id = fa.user_id WHERE m.user_id = '$user_id'";
         $result = $db->query($sql);
         //PRINT ALL OF THEIR INFORMATION FROM THE TABLE ABOVE
+        echo "<br>";
         echo "<table class ='table'>";
         echo "<tr>";
         echo "<th>Height</th>";
@@ -189,7 +192,7 @@
     <?php
       if ($myid == $user_id) { // if the profile page is of the user that is using the account, allow the user to update his profile
         echo "<form method='POST' action='../Preference/updateprofile.php'>";
-        echo "<input class='button' type='submit' name='Update' value='Update'>";
+        echo "<input type='submit' name='Update' value='Update'>";
         echo "</form>";
       }
     ?>
