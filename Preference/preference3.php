@@ -65,8 +65,8 @@
         <p>What is your favourite movie genre?</p>
           <select name="movgenre"required>
             <option></option>
-    				<option value="action">Action</option>
-    				<option value="adventure">Adventure</option>
+    				<option value="Action">Action</option>
+    				<option value="Adventure">Adventure</option>
             <option value="Comedy">Comedy</option>
             <option value="Crime">Crime</option>
             <option value="Drama">Drama</option>
@@ -96,7 +96,7 @@
             <option value="Indie">Indie</option>
             <option value="Jazz">Jazz</option>
             <option value="K-Pop">K-Pop</option>
-    				<option value="latin">Latin</option>
+    				<option value="Latin">Latin</option>
             <option value="Pop">Pop</option>
 	    <option value="Rap">Rap</option>
             <option value="Reggae">Reggae</option>
