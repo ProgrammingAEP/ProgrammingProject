@@ -72,10 +72,10 @@
     	<div class = "preferences">
     		<form method = "POST" action ="preference2.php">
 		      <p>How tall are you?</p>
-		      <input type="number" name ="height" id="height"/>CM
+		      <input type="number" name ="height" id="height"required/>CM
 
 					<p>My occupation is</p>
-						<select name="jobs">
+						<select name="jobs" required>
 							<option></option>
 							<option value="Accountant">Accountant</option>
 							<option value="Advertising Sales Agent">Advertising Sales Agent</option>
@@ -162,7 +162,7 @@
 					<br><br>
 
 					<p>What is your body type?</p>
-						<select name="body">
+						<select name="body"required>
 							<option></option>
 							<option value="Slim">Slim</option>
 							<option value="Athletic">Athletic</option>
@@ -173,7 +173,7 @@
 					<br><br>
 
 					<p>What is your highest level of education?</p>
-						<select name="education">
+						<select name="education"required>
 							<option></option>
 							<option value="High School Graduate">High School Graduate</option>
 							<option value="Certificate Diploma">Certificate Diploma</option>
@@ -184,7 +184,7 @@
 					<br><br>
 
 					<p>What is your ethnicity?</p>
-						<select name="ethnic">
+						<select name="ethnic"required>
 							<option></option>
 							<option value="Aboriginal">Aboriginal</option>
 							<option value="Asian">Asian</option>
@@ -198,7 +198,7 @@
 					<br><br>
 
 					<p>Do you drink?</p>
-						<select name="drink">
+						<select name="drink"required>
 							<option></option>
 							<option value="Yes">Yes</option>
 							<option value="No">No</option>
@@ -206,7 +206,7 @@
 					<br><br>
 
 					<p>Do you smoke?</p>
-						<select name="smoke">
+						<select name="smoke"required>
 							<option></option>
 							<option value="Yes">Yes</option>
 							<option value="No">No</option>
@@ -214,7 +214,7 @@
 					<br><br>
 
 					<p>Do you gamble?</p>
-						<select name="gamble">
+						<select name="gamble"required>
 							<option></option>
 							<option value="Yes">Yes</option>
 							<option value="No">No</option>
@@ -222,7 +222,7 @@
 					<br><br>
 
 					<p>What is your religion?</p>
-						<select name="religion">
+						<select name="religion"required>
 							<option></option>
 							<option value="Atheist">Atheist</option>
 							<option value="Agnostic">Agnostic</option>

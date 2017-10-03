@@ -68,7 +68,7 @@
 	  <div id="pref" class = "preferences">
 	  	<form method="POST" action="preference4.php">
 	   		<p>What would you consider yourself?</p>
-	        <select name="ptype">
+	        <select name="ptype"required>
             <option></option>
     				<option value="Extroverted">Extroverted</option>
             <option value="Introverted">Introverted</option>
@@ -76,7 +76,7 @@
 				<br><br>
 
 	      <p>How would you consider your personality?</p>
-	        <select name="personality">
+	        <select name="personality"required>
             <option value=""></option>
     				<option value="Outgoing">Outgoing</option>
     				<option value="Friendly">Friendly</option>
@@ -88,8 +88,8 @@
 				<br><br>
 
 	      <p>What are your interests/hobbies? (Please pick 5)</p>
-	      	<select name="hobby1">
-            <option value="interest"></option>
+	      	<select name="hobby1"required>
+            <option></option>
     				<option value="Acting">Acting</option>
             <option value="Archery">Archery</option>
             <option value="Arts">Arts</option>
@@ -152,8 +152,8 @@
 	        </select>
 					<br><br>
 
-					<select name="hobby2">
-						<option value="interest"></option>
+					<select name="hobby2"required>
+						<option></option>
     				<option value="Acting">Acting</option>
             <option value="Archery">Archery</option>
             <option value="Arts">Arts</option>
@@ -216,8 +216,8 @@
 					</select>
 					<br><br>
 
-					<select name="hobby3">
-						<option value="interest"></option>
+					<select name="hobby3"required>
+						<option></option>
 						<option value="Acting">Acting</option>
 						<option value="Archery">Archery</option>
 						<option value="Arts">Arts</option>
@@ -280,8 +280,8 @@
 					</select>
 					<br><br>
 
-					<select name="hobby4">
-						<option value="interest"></option>
+					<select name="hobby4"required>
+						<option></option>
     				<option value="Acting">Acting</option>
             <option value="Archery">Archery</option>
             <option value="Arts">Arts</option>
@@ -344,8 +344,8 @@
 					</select>
 				<br><br>
 
-					<select name="hobby5">
-						<option value="interest"></option>
+					<select name="hobby5"required>
+						<option></option>
     				<option value="Acting">Acting</option>
             <option value="Archery">Archery</option>
             <option value="Arts">Arts</option>
@@ -409,15 +409,15 @@
 					<br><br>
 
 	      <p>Do you like to travel?</p>
-	        <select name="travel">
-            <option value="travelling"></option>
-    				<option value="Yes">Yes</option>
+	        <select name="travel"required>
+            <option></option>
+            <option value="Yes">Yes</option>
             <option value="No">No</option>
 	        </select>
 				<br><br>
 
       <p>Which country would you like to visit next?</p>
-      	<select name="visit">
+      	<select name="visit"required>
           <option></option>
           <option value="Argentina">Argentina</option>
           <option value="Armenia">Armenia</option>

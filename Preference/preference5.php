@@ -69,12 +69,12 @@
     <div id="pref" class = "preferences">
 	    <form method="POST" action="preference5.php">
 	      <p>I am looking for a</p>
-	      <input type="radio" name="idealgender" value="male"> Male
-				<input type="radio" name="idealgender" value="female"> Female
+	      <input type="radio" name="idealgender" value="male" required> Male
+				<input type="radio" name="idealgender" value="female"required> Female
 				<br><br>
 
 	      <p>I would like my partner to be in this age range</p>
-	        <select name="idealage">
+	        <select name="idealage"required>
 	          <option></option>
 	          <option value="young">18-26</option>
 	          <option value="middle">27-35</option>
@@ -83,7 +83,7 @@
 	      	</select>
 
 	      <p>My ideal body type is for my partner is</p>
-	        <select name="idealbtype">
+	        <select name="idealbtype"required>
 	          <option></option>
 	          <option value="Slim">Slim</option>
 	          <option value="Athletic">Athletic</option>
@@ -94,7 +94,7 @@
 				<br><br>
 
 	      <p>My ideal education level for my partner is</p>
-	        <select name="idealeducation">
+	        <select name="idealeducation"required>
 	          <option></option>
 	          <option value="High School Graduate">High School Graduate</option>
 	          <option value="Certificate Diploma">Certificate Diploma</option>
@@ -105,7 +105,7 @@
 				<br><br>
 
 	      <p>My preferred ethnicity for my partner is</p>
-	        <select name="idealrace">
+	        <select name="idealrace"required>
 	          <option></option>
 						<option value="Aboriginal">Aboriginal</option>
 						<option value="Asian">Asian</option>
@@ -119,7 +119,7 @@
 				<br><br>
 
 	      <p>I'd like my partner to drink</p>
-	        <select name="idealdrink">
+	        <select name="idealdrink"required>
 	          <option></option>
 	          <option value="Yes">Yes</option>
 	          <option value="No">No</option>
@@ -127,7 +127,7 @@
 				<br><br>
 
 	      <p>I'd like my partner to smoke</p>
-	        <select name="idealsmoke">
+	        <select name="idealsmoke"required>
 	          <option></option>
 	          <option value="Yes">Yes</option>
 	          <option value="No">No</option>
@@ -135,7 +135,7 @@
 				<br><br>
 
 	      <p>I'd like my partner to gamble</p>
-	        <select name="idealgamble">
+	        <select name="idealgamble"required>
 	          <option></option>
 	          <option value="Yes">Yes</option>
 	          <option value="No">No</option>
@@ -143,7 +143,7 @@
 				<br><br>
 
 	      <p>My preferred religion for my partner is</p>
-	        <select name="idealreligion">
+	        <select name="idealreligion"required>
 	          <option></option>
 	          <option value="Atheist">Atheist</option>
 	          <option value="Agnostic">Agnostic</option>

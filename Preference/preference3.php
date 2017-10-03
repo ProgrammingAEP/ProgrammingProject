@@ -63,7 +63,7 @@
   	<div id="pref" class = "preferences">
     	<form method="POST" action="preference3.php">
         <p>What is your favourite movie genre?</p>
-          <select name="movgenre">
+          <select name="movgenre"required>
             <option></option>
     				<option value="action">Action</option>
     				<option value="adventure">Adventure</option>
@@ -79,12 +79,12 @@
 				<br><br>
 
         <p>What is your favourite movie?</p>
-          <input  type="text" value="" placeholder="" name="favmovie" id="movie" style="width: 70%;"/>
+          <input  type="text" value="" placeholder="" name="favmovie" id="movie" style="width: 70%;"required/>
 				<br>
 
         <p>What is your favourite music genre?</p>
-         	<select name="musgenre">
-            <option value="1"></option>
+         	<select name="musgenre"required/>
+            <option></option>
 		    		<option value="alt">Alternative</option>
 		    		<option value="blu">Blues</option>
             <option value="class">Classical</option>
@@ -107,7 +107,7 @@
 				<br><br>
 
         <p>What is your favourite song?</p>
-          <input  type="text" value="" placeholder="" name ="favsong" id="song" style="width: 70%;"/><br>
+          <input  type="text" value="" placeholder="" name ="favsong" id="song" style="width: 70%;"required/><br>
 
         <input type ="submit" class ="nextbtn" name ="pref_btn" value ="Next">
       </form>
