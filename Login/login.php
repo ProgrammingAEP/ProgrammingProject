@@ -10,9 +10,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 	<body>
+		<div class="signup">
+		<div class="signupbutton"><span><a href="../Registration/register.php"><button>Sign Up</button></a></span></div>
+		</div>
 		<form action = "validation.php" method="POST">
 			<div class="login">
-				<h1>Splendr</h1></a>
+				<a href="../index/index.php"><h1>Splendr</h1></a>
 					<?php
 						if (isset($_SESSION["error"])){ //  SESSION["error"] is flagged in validation.php file
 							echo "<p style=color:red;>"."Your username and password is incorrect!"."<p>";
@@ -25,6 +28,6 @@
     		<div class= "remember"><a href="#" class="forgot">Forgot password?</a></div>
       </div>
     </form>
+		<?php include("../external/footer.php");?>
 	</body>
-	<?php include("../external/footer.php");?>
 </html>
