@@ -91,6 +91,31 @@ input{
 
 }
 
+.signup{
+  width: 40%;
+  margin: 200px auto;
+}
+
+.signupbutton button{
+  width: 20%;
+  height: 40px;
+  background: #FF656D;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #FF656D;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  cursor: pointer;
+  float: right;
+}
+.signupbutton button:hover{
+    background: #FF3A44;
+    border: 1px solid #FF3A44;
+}
+
 .login button:hover{
     background: #FF3A44;
     border: 1px solid #FF3A44;
